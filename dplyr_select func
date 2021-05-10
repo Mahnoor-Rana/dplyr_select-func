@@ -1,0 +1,13 @@
+mydata = read.csv("https://raw.githubusercontent.com/deepanshu88/data/master/sampledata.csv")
+sample_n(mydata,3)
+sample_frac(mydata,0.1)
+x1 = distinct(mydata)
+x2 = distinct(mydata, Index, .keep_all= TRUE)
+mydata2
+mydata2 = select(mydata, Index, State:Y2008)
+mydata2
+mydata3 = select(mydata, starts_with("Y"))
+mydata3
+mydata3 = select(mydata, starts_with("Y"))
+mydata6 = rename(mydata, Index1=Index)
+mydata6
